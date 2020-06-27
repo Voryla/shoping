@@ -1,0 +1,203 @@
+/*主页模块*/
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+/*新品聚焦页面*/
+.main .focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 100%;
+}
+
+/*新品聚焦页面的图片大小*/
+.focus img {
+    width: 100%;
+    height: 100%;
+}
+
+/*图片左右轮播按钮*/
+.prev,
+.next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 50px;
+    margin-top: -25px;
+    background-color: rgba(0, 0, 0, .4);
+    font-family: 'icomoon';
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/*绘制右上和右下角的圆角边*/
+.prev {
+    left: 0;
+    border-radius: 0 20px 20px 0;
+}
+
+/*字体图标*/
+.prev::before {
+    content: '\e901';
+
+}
+
+/*绘制左上角和左下角的圆角边*/
+.next {
+    right: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+/*字体图标*/
+.next::before {
+    content: '\e902';
+}
+
+/*轮播图左下角原点按钮*/
+.focus ol {
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    left: 15%;
+    margin-left: -60px;
+    bottom: 10px;
+}
+
+/*将每个li设置成圆形*/
+.focus ol li {
+    float: right;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+/*当鼠标移动至li时更改其背景色*/
+.focus ol li:hover {
+    background-color: #ffffff;
+}
+
+/*给a标签设置大小*/
+.focus ol li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*右侧新品推荐模块*/
+.main .newsflash {
+    float: right;
+    width: 250px;
+    height: 100%;
+}
+
+/*右侧新品推荐 新闻*/
+.newsflash .news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+/*右侧顶部标题*/
+.news .news_hd {
+    height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+    line-height: 33px;
+}
+
+/*右侧顶部标题内容*/
+.news .news_hd h4 {
+    float: left;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+/*右侧顶部标题 更多内容*/
+.news .news_hd a {
+    display: block;
+    float: right;
+    font-size: 14px;
+}
+
+/*更多后的>字体图标*/
+.news .news_hd a::after {
+    font-family: 'icomoon';
+    content: '\e902';
+}
+
+/*右侧新闻内容*/
+.news .news_bd {
+    height: 132px;
+    padding: 5px 15px 0;
+}
+
+/*右侧每条新闻样式*/
+.news .news_bd ul li {
+    height: 24px;
+    line-height: 24px;
+    /*溢出部分，强制一行显示*/
+    white-space: nowrap;
+    /*超出的部分隐藏*/
+    overflow: hidden;
+    /*超出部分用省略号代替*/
+    text-overflow: ellipsis;
+}
+
+/*每条中左侧加粗字体*/
+.news .news_bd h4 {
+    float: left;
+    font-size: 14px;
+}
+
+/*每条新闻的链接*/
+.news .news_bd a {
+    font-size: 14px;
+}
+
+/*服务栏*/
+.newsflash .lifeservice {
+    height: 209px;
+    /*隐藏超出的部分*/
+    overflow: hidden;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    text-align: center;
+}
+
+/*为列表设置宽高*/
+.lifeservice ul {
+    width: 252px;
+    height: 209px;
+    background: url("../images/icons.png") no-repeat 1px -3px;
+}
+
+/*设置每栏服务的样式*/
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+/*设置服务背景图片*/
+.lifeservice ul li i {
+    /*text-align能让行内和行内块元素居中对齐，所以这里将i改为行内块标签*/
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+}
+
+/*右侧底部广告模块*/
+.newsflash .bargain {
+    margin-top: 5px;
+}
